@@ -178,7 +178,7 @@ div.right.wiki p {
     flex-direction: column;
     align-items: flex-start;
     margin: 5vh auto;
-    width: 80%;
+    width: 90%;
 }
 
 .download-row {
@@ -186,7 +186,8 @@ div.right.wiki p {
     display: flex;
     align-items: flex-start;
     gap: 0px;
-    width: 90vw;
+    width: 80vw;
+    padding-left: 10vw;
 }
 
 div.icon {
