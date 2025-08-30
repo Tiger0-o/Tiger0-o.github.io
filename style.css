@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+    --pale-green: #edf8a5;
+    --green: #c0d470;
+    --dark-green: #79943d;
+    --light-blue: #b1e0be;
+    --dark-blue: #5ba38e;
+    --light-brown:#e8cfa6;
+    --dark-brown:#c69d6f;
+}
+
+/* HTML basic components styling*/
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--pale-green);
+    font-family: "Inter";
+}
+
+h1, h6 {
+    margin-left: 5%;
+    margin-right: 5%;
+    color: var(--dark-brown);
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p {
+    color: var(--dark-brown);
+    font-size: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styling for the header */
+.header {
+    height: 30vh;
+    padding: 15px;
+
+    background-color: var(--green);
+    background-image: url(../assets/riverMap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header img {
+    width: min(80vw, 400px);
+    max-width: 400px;
+    height: auto;
+    margin: 0px auto 5px auto;
+}
+
+.header h6 {
+    width: auto;
+    margin: 0px auto;
+    text-transform: uppercase;
+    color: var(--light-brown);
+    font-size: clamp(16px, 3vw, 20px);
+    font-weight: 600;
+    text-align: left;
+}
+
+/* Styling for the NavBar (header)*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--green);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li {
+    flex: 1;
+    text-align: center; 
+}
+
+li a {
+    font-size: 15px;
+    display: block;
+    color: var(--dark-green);
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+li a.active, li a:hover {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    font-weight: bold;
+}
+
+/* For all content within the <body> */
+.content {
+    margin: 2.5% 0px;
+}
+
+/* Styling for index.html */
+div.content.index {
+    width: 80vw;
+    margin: 0px auto;
+}
+
+div.content.index div {
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.content.index img {
+    height: 35vh;
+}
+
+/* Resizing for the images in index.html */
+@media (max-width: 1250px) {
+    div.content.index img {
+    height: 25vh;
+    }
+}
+
+@media (max-width: 1000px) {
+    div.content.index img {
+    height: 20vh;
+    }
+
+    div.content.index {
+        width: 100%;
+    }
+}
+
+div.content.index div p {
+    margin: 0px 10px;
+}
+
+/* Styling for devlopment.html */
+div.content.development {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+/* Spacing for the <divs> other than the first */
+div.specialformattingcausethisonelooksweird {
+    margin: 40px 0px 0px 0px;
+}
+
+div.left.development p {
+    margin-top: -10px;
+    margin-right: 5%;
+}
+
+div.left.development {
+    border-right: 3.5px solid var(--green);
+    text-align: right;
+}
+
+div.right.development p {
+    margin-top: -10px;
+    margin-left: 5%;
+}
+
+div.right.development {
+    margin: auto 0px auto 0px
+}
+
+/* Styling for wiki.html */
+div.content.wiki {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    width: 100%;
+}
+
+div.left.wiki {
+    border-right: 3.5px solid var(--green);
+    width: 25%;
+}
+
+div.left.wiki h6 {
+    font-size: 18px;
+    width: 80%;
+    margin: 10% auto;
+}
+
+div.right.wiki {
+    width: 75%;
+}
+
+div.right.wiki p {
+    margin-top: -10px;
+    margin-left: 5%;
+}
+
+/* Styling for download.html */
+.download-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5vh auto;
+    width: 80%;
+}
+
+.download-row {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    gap: 0px;
+    width: 80%;
+    padding-left: 10vw;
+}
+
+
+div.icon {
+    width: 10px;
+    height: 75px;
+    min-width: 50px;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    color: var(--dark-green);
+    flex-shrink: 0;
+    margin: 0px 5%;
+}
+
+div.icon a i {
+    color: var(--dark-green);
+}
+
+div.icon a i:hover {
+    color: var(--dark-blue);
+}
+
+div.text h1 {
+    font-size: 20px;
+    margin: 0px;
+    color: var(--dark-brown);
+    text-transform: uppercase;
+}
+
+div.text p {
+    margin: 5px 0px 0px 0px;
+    font-size: 20px;
+    color: var(--dark-brown);
+}
+
+/* Styling for the footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: var(--green);
+    padding: 20px;
+    flex-wrap: nowrap;
+}
+
+/* Styling for the logo (footer)*/
+.logo-section {
+    flex: 1;
+    max-width: 40%;
+    min-width: 40%;
+}
+
+.logo-section img {
+    width: 215px;
+    max-height: 123px;
+    max-width: 300px;
+    margin-left: 5%;
+}
+
+.copyright {
+    font-size: 12px;
+    color: var(--dark-green);
+    margin-top: -10px;
+    margin-left: 5%;
+}
+
+/* Navigation link at the footer */
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    min-width: 30%;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark-green);
+    padding: 5px 5px;
+}
+
+.footer .nav-links a:hover {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* Social links at the footer */
+div.social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+    gap: 8px;   
+    max-width: 10%;
+    min-width: 10%;
+}
+
+div.social-icons a {
+    font-size: 24px;
+    color: var(--dark-green);
+}
+
+div.social-icons a:hover {
+    color: var(--dark-blue);
+}
+
+
+
+
